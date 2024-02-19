@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.form input {
+  padding: 0.2rem;
+}
+
+.form button {
+  padding: 0.2rem;
+}
