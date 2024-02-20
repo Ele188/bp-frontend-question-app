@@ -1,0 +1,8 @@
+.wrapper {
+  border: solid hsl(223, 42%, 35%) 1px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: rgb(134, 149, 245);
+  padding: 20px;
+}
