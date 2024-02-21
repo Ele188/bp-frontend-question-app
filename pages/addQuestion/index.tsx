@@ -3,7 +3,7 @@ import cookie from "js-cookie";
 import Header from '../../components/Header/Header';
 import styles from "./styles.module.css";
 import axios from 'axios';
-import Footer from '../../components/Footer/Footer';
+
 
 const AddQuestion = () => {
   const [date, setDate] = useState<string>("");
