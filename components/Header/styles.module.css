@@ -1,6 +1,9 @@
 .wrapper {
+  display: flex;
+  justify-content: space-between;
   height: 100px;
-  background-color: antiquewhite;
+  width: 100%;
+  background-color: rgba(233, 150, 122, 0.847);
   padding: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -9,4 +12,15 @@
 
 .logo {
   font-size: 2rem;
+  height: 70px;
+  width: 70px;
+  display: flex;
+}
+
+.title {
+  color: rgb(10, 75, 10);
+  font-size: x-large;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }

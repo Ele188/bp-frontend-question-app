@@ -6,7 +6,8 @@ import Card from "../components/Card/Card";
 import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import styles from "../styles/Home.module.css"
+import styles from "../styles/Home.module.css";
+import Link from "next/link"
 
 
 
@@ -27,12 +28,16 @@ const fetchQuestions = async ()=> {
   const headers = {
     authorization: cookie.get("jwt_token"),
   };
-
+try{
   const response = await axios.get("http://localhost:3001/questions/", {
     headers:headers,
   });
   console.log(response.data.questions)
   setQuestions(response.data.questions);
+ }catch (err){
+  console.log(err);
+  router.push("/login");
+ }
 };
 
   useEffect(() => {
@@ -44,6 +49,11 @@ const fetchQuestions = async ()=> {
   return ( 
   <>
   <Header />
+
+   <Link href="/addQuestion">
+    <button className={styles.addQuestionBtn}> Add question </button>
+   </Link>
+
   <div className={styles.cards}>
     {questions.map((question) => {
       return (

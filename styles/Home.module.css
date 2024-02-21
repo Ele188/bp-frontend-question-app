@@ -4,3 +4,19 @@
   width: 500px;
   margin: auto;
 }
+.addQuestionBtn {
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 500px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 700;
+  color: darkgreen;
+  border-radius: 8px;
+  border: solid 1px rgba(66, 56, 56, 0.295);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
